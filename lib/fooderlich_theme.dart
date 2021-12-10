@@ -58,6 +58,9 @@ class FooderlichTheme {
     ),
   );
 
+  static ProgressIndicatorThemeData progressIndicatorTheme =
+      const ProgressIndicatorThemeData(color: Colors.green);
+
   static ThemeData light() {
     return ThemeData(
       brightness: Brightness.light,
@@ -78,6 +81,7 @@ class FooderlichTheme {
         selectedItemColor: Colors.green,
       ),
       textTheme: lightTextTheme,
+      progressIndicatorTheme: progressIndicatorTheme,
     );
   }
 
@@ -96,6 +100,7 @@ class FooderlichTheme {
         selectedItemColor: Colors.green,
       ),
       textTheme: darkTextTheme,
+      progressIndicatorTheme: progressIndicatorTheme,
     );
   }
 }
